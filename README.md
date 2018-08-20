@@ -52,8 +52,10 @@ From within the directory containing this source:
 Warning: Continuous tests with random operations - take a few minutes
 
 ## Reserved fields in the child schema - do not use in your child schema
+``` javascript
 tran - transaction object
 check - value for check child document exists.
+```
 
 ## Fork it!
 Pull requests, issues, and feedback are welcome.
