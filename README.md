@@ -6,7 +6,7 @@ A transaction system for tree documents for mongoose.
 ## Introduction
 
 Tree document schema:
-
+``` javascript
 _id: ObjectId //this (parent) document id
 children: // optional array of children
 [
@@ -15,6 +15,7 @@ children: // optional array of children
  },
  ...
 ]
+```
 
 Tree-transact allow:
 - to safely move child documents from one parent document to another;
@@ -30,7 +31,10 @@ Supported child documents from another collections.
 
 ## How to use tree-transact
 
-npm install --save tree-transact
+Install
+```shell
+npm install tree-transact -S
+```
 
 see the directory containing this source
 /example/example1.js
