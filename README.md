@@ -31,7 +31,7 @@ Supported child documents from another collections.
 
 ## How to use tree-transact
 
-Install
+### Install
 ```shell
 npm install tree-transact -S
 ```
@@ -39,7 +39,7 @@ npm install tree-transact -S
 see the directory containing this source
 /example/example1.js
 
-## Run example
+### Run example
 From within the directory containing this source:
 
 >npm run example1
