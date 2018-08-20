@@ -1,0 +1,39 @@
+{
+  "name": "tree-transact",
+  "version": "0.0.1",
+  "description": "A mongoose schema for tree object, supports transactions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha",
+    "example1": "node example/embedded-child-data.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/abernov/tree-transact.git"
+  },
+  "keywords": [
+    "mongo",
+    "mongoose",
+    "tree",
+    "transaction"
+  ],
+  "author": "Arkady Bernov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abernov/tree-transact/issues"
+  },
+  "homepage": "https://github.com/abernov/tree-transact",
+  "dependencies": {
+    "async": "^2.6.1",
+    "mongoose": "^5.2.5"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.1",
+    "istanbul": "^0.4.5",
+    "lodash": "^4.17.10",
+    "mocha": "^5.2.0",
+    "sinon": "^5.0.10"
+  }
+}
