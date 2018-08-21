@@ -1,5 +1,11 @@
 tree-transact
 =================
+[![Build Status](https://api.travis-ci.org/spearhead-ea/tree-transact.svg?branch=master)](https://travis-ci.org/spearhead-ea/tree-transact?branch=master)
+[![NPM version](https://badge.fury.io/js/tree-transact.svg)](http://badge.fury.io/js/tree-transact)
+[![Dependency Status](https://david-dm.org/spearhead-ea/tree-transact/status.svg)](https://david-dm.org/spearhead-ea/tree-transact)
+[![Coverage Status](https://coveralls.io/repos/github/spearhead-ea/tree-transact/badge.svg?branch=master)](https://coveralls.io/github/spearhead-ea/tree-transact?branch=master)
+![vue version](https://img.shields.io/badge/vue-2.x-brightgreen.svg)
+![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)
 
 A transaction system for tree documents for mongoose.
 
