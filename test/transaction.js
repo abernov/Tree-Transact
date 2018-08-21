@@ -346,7 +346,6 @@ describe('Tree Transact tests', function(){
 
     var tag = undefined;
 
- //   this.timeout(4000)
     beforeEach(function(done){
       Tree.remove(done);
     });

@@ -4,7 +4,7 @@
   "description": "A mongoose schema for tree object, supports transactions",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --timeout 10000",
     "coverage": "istanbul cover _mocha",
     "example1": "node example/embedded-child-data.js "
   },
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/abernov/tree-transact",
   "dependencies": {
-    "mongoose": "^5.2.5"
+    "mongoose": "^5.2.9"
   },
   "devDependencies": {
     "async": "^2.6.1",
