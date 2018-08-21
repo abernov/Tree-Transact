@@ -340,7 +340,7 @@ async function continuousMoveChildTest(folders, files, durationSec, moveToSelf, 
 }
 
 
-describe('Tree Transact tests', function(){
+describe('Tree-Transact tests', function(){
 
   describe('changeTransaction function', function () {
 
@@ -1285,7 +1285,7 @@ describe('moveChild, addChild, removeChild functions', function () {
 
 });
 
-  describe('Continuous tests with random operations - take a few minutes!)', function () {
+  describe('Continuous tests with random operations - take a few minutes!', function () {
 
   var sandbox;
   var errorsPercent = 0;
@@ -1316,12 +1316,6 @@ describe('moveChild, addChild, removeChild functions', function () {
     Tree.setTimeout(60); //Seconds
     Tree.remove(done);
   });
-
-
-      //   this.timeout(4000)
-      beforeEach(function (done) {
-        Tree.remove(done);
-      });
 
 
     it('should not give an error on moveChild, files:4, folders:2, processes: 1', async function () {

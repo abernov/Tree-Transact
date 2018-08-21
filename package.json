@@ -4,7 +4,7 @@
   "description": "A mongoose schema for tree object, supports transactions",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 10000",
+    "test": "mocha --timeout 10000 --exit",
     "coverage": "istanbul cover _mocha",
     "example1": "node example/embedded-child-data.js "
   },
