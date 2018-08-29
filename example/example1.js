@@ -3,8 +3,8 @@ mongoose.connect('mongodb://localhost:27017/test', {
     useNewUrlParser: true
 });
 
-//var TreeSchema = require('treetransact')(
-var TreeSchema = require('../lib/treetransact')(
+//var TreeSchema = require('tree-transact')({
+var TreeSchema = require('../index')(
   {
     name: { type: String } //name - addition field for parent document
   },{

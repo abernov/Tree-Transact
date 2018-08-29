@@ -1,6 +1,6 @@
 {
   "name": "tree-transact",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A mongoose schema for tree object, supports transactions",
   "main": "index.js",
   "scripts": {
@@ -25,12 +25,12 @@
   },
   "homepage": "https://github.com/abernov/tree-transact",
   "dependencies": {
-    "mongoose": "^5.2.9"
+    "mongoose": "^5.2.10"
   },
   "devDependencies": {
     "async": "^2.6.1",
     "chai": "^4.1.2",
-    "coveralls": "^3.0.1",
+    "coveralls": "^3.0.2",
     "istanbul": "^0.4.5",
     "lodash": "^4.17.10",
     "mocha": "^5.2.0",

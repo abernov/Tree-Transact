@@ -1457,7 +1457,7 @@ describe('moveChild, addChild, removeChild functions', function () {
       Tree.setTimeout(2); //Seconds
       let showLog = false;
       let moveToSelf = true;
-      let testDuration = 30; //seconds
+      let testDuration = 10; //seconds
       let __v = 0;
       let testRepeat = 2;
       for (var i = 0; i < testRepeat; i++) {
