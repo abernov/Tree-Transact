@@ -347,7 +347,7 @@ describe('Tree-Transact tests', function(){
     var tag = undefined;
 
     beforeEach(function(done){
-      Tree.remove(done);
+      Tree.deleteMany({}, done);
     });
 
     it('should not give an error on properly constructed tree', async function () {
@@ -782,7 +782,7 @@ describe('Tree-Transact tests', function(){
 describe('getChildren function, should not give an error', function () {
 
   beforeEach(function (done) {
-    Tree.remove(done);
+    Tree.deleteMany({}, done);
   });
 
   afterEach(function (done) {
@@ -1020,17 +1020,19 @@ describe('getChildren function, should not give an error', function () {
 
     it('this=IDLE setChildDocExistsCallback', async function () {
       let checkDN = Date.now()-1;
-      let checkD = checkDN + 120000;
+      let checkDP = checkDN + 120000;
+      let checkDM = - checkDP;
+
 
       let treeSrc = {
         name: 'root',
         children: [
-          { name: 'file1', check: checkD },
-          { name: 'file2', check: checkD },
+          { name: 'file1', check: checkDP },
+          { name: 'file2', check: checkDP },
           { name: 'file3', check: checkDN},
           { name: 'file4', check: checkDN},
-          { name: 'file5', check: checkD, tran:{_id:'tran1', state: state_RECEIVED, mate: 'folder2'}},
-          { name: 'file6', check: checkD, tran:{_id:'tran2', state: state_RECEIVED, mate: 'folder2'}},
+          { name: 'file5', check: checkDP, tran:{_id:'tran1', state: state_RECEIVED, mate: 'folder2'}},
+          { name: 'file6', check: checkDP, tran:{_id:'tran2', state: state_RECEIVED, mate: 'folder2'}},
           { name: 'file7', check: checkDN, tran:{_id:'tran3', state: state_RECEIVED, mate: 'folder2'}},
           { name: 'file8', check: checkDN, tran:{_id:'tran4', state: state_RECEIVED, mate: 'folder2'}},
         ]
@@ -1038,11 +1040,11 @@ describe('getChildren function, should not give an error', function () {
       let treeDest = {
         name: 'root',
         children: [
-          { name: 'file1', check: checkD },
-          { name: 'file2', check: checkD },
+          { name: 'file1' },
+          { name: 'file2', check: checkDP },
           { name: 'file3' },
-          { name: 'file5', check: checkD },
-          { name: 'file6', check: checkD },
+          { name: 'file5' },
+          { name: 'file6', check: checkDP },
           { name: 'file7' },
         ]
       };
@@ -1093,7 +1095,7 @@ describe('moveChild, addChild, removeChild functions', function () {
 
    //   this.timeout(4000)
     beforeEach(function (done) {
-      Tree.remove(done);
+      Tree.deleteMany({}, done);
     });
 
     it('should not give an error on moveChild FILE1 from FOLDER1 to ROOT', async function () {
@@ -1314,7 +1316,7 @@ describe('moveChild, addChild, removeChild functions', function () {
   beforeEach(function (done) {
     errorsPercent = 0;
     Tree.setTimeout(60); //Seconds
-    Tree.remove(done);
+    Tree.deleteMany({}, done);
   });
 
 

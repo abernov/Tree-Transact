@@ -14,11 +14,12 @@ var TreeSchema = require('../index')(
 var Tree = mongoose.model('TreeTansactExample1', TreeSchema); //create model
 
 async function test() { 
-    await Tree.remove(); // remove all documents from TreeTansactExample1 collection
+    await Tree.deleteMany({}); // remove all documents from TreeTansactExample1 collection
 
     // create document Folder1 
     var folder1 = new Tree({
-      name: 'Folder1'
+      name: 'Folder1',
+      children: []
     });
     await folder1.save(); //save folder1 document to mongoDb
 
@@ -26,6 +27,7 @@ async function test() {
     var folder2 = new Tree({
       _id: new mongoose.Types.ObjectId,
       name: 'Folder2',
+      children: []
     });
     await folder2.save(); //save folder2 document to mongoDb
 
@@ -75,8 +77,7 @@ async function test() {
     var checkChildDoc =  true; //check that child document exists
     await Tree.removeChild(folder1, folder2._id, checkChildDoc);
     // here await Tree.getChildren(folder1).length return 1, child not removed yet!
-    await Tree.remove({_id: folder2._id});
-
+    await Tree.removeFolderDoc(folder2._id);
     // get folder1 children
     folder1 = await Tree.findById(folder1._id);
     children = await Tree.getChildren(folder1);
@@ -85,6 +86,7 @@ async function test() {
     //safely add new folder3 to folder1 children
     var folder3 = new Tree({
             name: 'Folder3',
+            children: []
     });
     folder1 = await Tree.addChild(
         folder1,
