@@ -1,9 +1,9 @@
 tree-transact
 =================
-[![Build Status](https://api.travis-ci.org/spearhead-ea/tree-transact.svg?branch=master)](https://travis-ci.org/spearhead-ea/tree-transact?branch=master)
+[![Build Status](https://api.travis-ci.org/abernov/Tree-Transact.svg?branch=master)](https://travis-ci.org/abernov/Tree-Transact?branch=master)
 [![NPM version](https://badge.fury.io/js/tree-transact.svg)](http://badge.fury.io/js/tree-transact)
-[![Dependency Status](https://david-dm.org/spearhead-ea/tree-transact/status.svg)](https://david-dm.org/spearhead-ea/tree-transact)
-[![Coverage Status](https://coveralls.io/repos/github/spearhead-ea/tree-transact/badge.svg?branch=master)](https://coveralls.io/github/spearhead-ea/tree-transact?branch=master)
+[![Dependency Status](https://david-dm.org/abernov/Tree-Transact/status.svg)](https://david-dm.org/abernov/Tree-Transact)
+[![Coverage Status](https://coveralls.io/repos/github/abernov/Tree-Transact/badge.svg?branch=master)](https://coveralls.io/github/abernov/Tree-Transact?branch=master)
 ![vue version](https://img.shields.io/badge/vue-2.x-brightgreen.svg)
 ![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)
 
