@@ -3,6 +3,9 @@ mongoose.connect('mongodb://localhost:27017/test', {
     useNewUrlParser: true
 });
 
+//var TreeError = require('tree-transact/lib/errors');
+var TreeError = require('../lib/errors');
+
 //var TreeSchema = require('tree-transact')({
 var TreeSchema = require('../index')(
   {
@@ -118,5 +121,9 @@ var checkChildExistsCallback = async function (child) { //should return true if 
 Tree.setChildDocExistsCallback(checkChildExistsCallback);
 
 test().then((r) => {console.log("Done")}).catch((err) => {
-      console.log("error: " + err);
+    if (err instanceof TreeError) {
+        console.log("TreeError: " + err.message + " code=" + err.code + " docId=" + err.doc + " childId=" + err.child);
+    } else {
+        console.log("error: " + err);
+    }
   });
