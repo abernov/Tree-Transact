@@ -28,14 +28,14 @@ children: // optional array of children
 ```
 
 Tree-transact allow:
-- to safely move child documents from one parent document to another;
-- to safely add and remove child documents;
+- to safely move child subdocuments from one parent document to another;
+- to safely add and remove child subdocuments;
 - to safely change parent document data.
 
-It is guaranteed that child documents will not multiply and will not disappear.
+It is guaranteed that child subdocuments will not multiply and will not disappear.
 If a database or server error occurs, the documents are automatically restored.
 
-It is possible to add additional fields to both the parent and child documents (name, data, collectionName, etc.).
+It is possible to add additional fields to both the parent and child subdocuments (name, data, collectionName, etc.).
 Supported child documents from another collections.
 
 
