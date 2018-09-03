@@ -6,6 +6,10 @@ tree-transact
 [![Coverage Status](https://coveralls.io/repos/github/abernov/Tree-Transact/badge.svg?branch=master)](https://coveralls.io/github/abernov/Tree-Transact?branch=master)
 ![vue version](https://img.shields.io/badge/vue-2.x-brightgreen.svg)
 ![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)
+<a href="https://npmcharts.com/compare/tree-transact?minimal=true">
+  <img src="http://img.shields.io/npm/dm/tree-transact.svg">
+</a>
+
 
 A transaction system for tree documents for mongoose.
 
