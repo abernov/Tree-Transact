@@ -1,6 +1,6 @@
 {
   "name": "tree-transact",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A mongoose schema for tree object, supports transactions",
   "main": "index.js",
   "scripts": {
